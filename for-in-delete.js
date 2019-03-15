@@ -27,9 +27,9 @@
   In this next example, we are accessing the property names themselves. Uncomment the code below, run it and look at what prints in the console.
 */
 
-// for(var key in values) {
-//   console.log(key)
-// }
+for(var key in values) {
+  console.log(key)
+}
 
 
 
@@ -39,8 +39,16 @@
   Inside the function showValues, write a for in loop that concatenates each of the property values and returns the concatenated string.
 */
 
+
+
 function showValues( obj ) {
-  //Code Here
+  let answer = "";
+for(let key in obj){ 
+  console.log(obj[key])
+answer = answer + obj[key]
+
+}
+return answer
 }
 
 
@@ -53,7 +61,15 @@ function showValues( obj ) {
   Return the updated object.
 */
 
-//Code Here
+function greaterThan10 (object){
+    for( let key in object){
+    console.log(object)
+    if(object[key] > 10){
+      object[key]=0
+    }
+    }
+    return object
+}
 
 
 
