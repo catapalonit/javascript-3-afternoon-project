@@ -17,9 +17,7 @@ let product = {
   imageUrl: 'https://i.ebayimg.com/images/g/9T4AAOSwbmdZf2jN/s-l640.jpg'
 }
 
-var productCopy = []
-
-(...product);   //if you read this mykenzie would you tell me if this is actually correct?
+var productCopy = {...product};   
 
 
 
@@ -31,9 +29,8 @@ let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 
 // code here
 
-var colorsCopy = []
 
-colorsCopy = [...colors];
+var colorsCopy = [...colors];
 
 
 
